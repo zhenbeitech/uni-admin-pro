@@ -1,0 +1,32 @@
+# .prettierrc or .prettierrc.yaml
+
+printWidth: 180
+tabWidth: 2
+endOfLine: lf
+
+quoteProps: as-needed
+bracketSpacing: true
+bracketSameLine: false
+arrowParens: always
+singleAttributePerLine: false
+requirePragma: false
+insertPragma: false
+
+# spacedComment: true
+htmlWhitespaceSensitivity: ignore
+
+semi: true
+trailingComma: all
+singleQuote: true
+jsxSingleQuote: true
+
+embeddedLanguageFormatting: auto
+
+proseWrap: never
+overrides:
+  - files: .prettierrc
+    options:
+      parser: json
+  - files: document.ejs
+    options:
+      parser: html
